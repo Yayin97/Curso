@@ -2,15 +2,15 @@ using UnityEngine;
 
 public class Capsula : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    private void FixedUpdate()
     {
-        
-    }
+        //Obtenemos el render de nuestro componente
+        Renderer capsula = GetComponent<Renderer>();
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        //Creamos el color aleatorio
+        Color a =new Color(Random.value, Random.value, Random.value);
+
+        //Se lo aplicamos
+        capsula.material.color= a;
     }
 }
