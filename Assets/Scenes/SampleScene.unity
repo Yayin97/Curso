@@ -507,12 +507,24 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 499191602}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1487f3ce33ae8ec4ea576f166b57e132, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ColorAleatorioUpdate
   tiempoParaCambio: 0.5
+--- !u!114 &499191612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 499191602}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c399ca4d79761a4cb0664fef98121d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Esfera
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -592,11 +604,23 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1660258325}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5a6f8f7205570a047ae4dbcd28a2266a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ColorAleatorioAwake
+--- !u!114 &1660258331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1660258325}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2cbf17d642d8ca24fa5762dabf8b8922, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Cubo
 --- !u!1001 &4450707452279351731
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -656,6 +680,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8640329942578650398, guid: 4db39b50306610f4bba9403e8a689cfc, type: 3}
       insertIndex: -1
       addedObject: {fileID: 499191607}
+    - targetCorrespondingSourceObject: {fileID: 8640329942578650398, guid: 4db39b50306610f4bba9403e8a689cfc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 499191612}
   m_SourcePrefab: {fileID: 100100000, guid: 4db39b50306610f4bba9403e8a689cfc, type: 3}
 --- !u!1001 &5863409197593314530
 PrefabInstance:
@@ -716,6 +743,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2495615233609867909, guid: 1e2d656418530ea4a82689fce3906820, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1660258326}
+    - targetCorrespondingSourceObject: {fileID: 2495615233609867909, guid: 1e2d656418530ea4a82689fce3906820, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1660258331}
   m_SourcePrefab: {fileID: 100100000, guid: 1e2d656418530ea4a82689fce3906820, type: 3}
 --- !u!1001 &8233731803016243784
 PrefabInstance:
