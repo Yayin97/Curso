@@ -17,10 +17,10 @@ public class PrimerCubo : MonoBehaviour
 
     private void Start()
     {
-        GameObject PrimerCubo = Instantiate<GameObject>(Cubo);
-        PrimerCubo.name = "PrimerCubo";
-        rend = PrimerCubo.GetComponent<MeshRenderer>();
-        PrimerCubo.transform.position = new Vector3(-20, 5, -10);
+        GameObject primercubo = Instantiate<GameObject>(Cubo);
+        primercubo.name = "PrimerCubo";
+        rend = primercubo.GetComponent<MeshRenderer>();
+        primercubo.transform.position = new Vector3(-20, 5, -10);
     }
 
     private void FixedUpdate()

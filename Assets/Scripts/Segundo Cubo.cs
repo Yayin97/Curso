@@ -24,10 +24,10 @@ public class SegundoCubo : MonoBehaviour
 
     private void Start()
     {
-        GameObject SegundoCubo = Instantiate<GameObject>(Cubo2);
-        SegundoCubo.name = "SegundoCubo";
-        rend = SegundoCubo.GetComponent<MeshRenderer>();
-        SegundoCubo.transform.position = new Vector3(-10, 5, -10);
+        GameObject segundocubo = Instantiate<GameObject>(Cubo2);
+        segundocubo.name = "SegundoCubo";
+        rend = segundocubo.GetComponent<MeshRenderer>();
+        segundocubo.transform.position = new Vector3(-10, 5, -10);
     }
 
     private void FixedUpdate()

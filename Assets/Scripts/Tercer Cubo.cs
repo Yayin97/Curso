@@ -6,6 +6,8 @@ public class TercerCubo : MonoBehaviour
     public PrimerCubo cubo1;
     public SegundoCubo cubo2;
 
+    public bool estado;
+
     private Renderer rend;
 
     public GameObject Cubo3;
@@ -26,17 +28,17 @@ public class TercerCubo : MonoBehaviour
 
     private void Start()
     {
-        GameObject TercerCubo = Instantiate<GameObject>(Cubo3);
-        TercerCubo.name = "TercerCubo";
-        rend = TercerCubo.GetComponent<MeshRenderer>();
-        TercerCubo.transform.position = new Vector3(0, 5, -10);
+        GameObject tercercubo = Instantiate<GameObject>(Cubo3);
+        tercercubo.name = "TercerCubo";
+        rend = tercercubo.GetComponent<MeshRenderer>();
+        tercercubo.transform.position = new Vector3(0, 5, -10);
     }
 
     private void FixedUpdate()
     {
-        bool resultado = cubo1.estado && cubo2.estado;
+        estado = cubo1.estado && cubo2.estado;
 
-        if (resultado) 
+        if (estado) 
         {
             rend.material.color = Color.white;
         }
