@@ -6,13 +6,21 @@ public class PrimerCubo : MonoBehaviour
     private Renderer rend;
 
     public GameObject Cubo;
-    private void Awake()
-    {
-        GameObject CuboAwake = Instantiate<GameObject>(Cubo);
-        CuboAwake.name = "PrimerCubo";
-        rend = CuboAwake.GetComponent<MeshRenderer>();
-        CuboAwake.transform.position = new Vector3(-20,5,-10);
+    //private void Awake()
+    //{
+    //    GameObject CuboAwake = Instantiate<GameObject>(Cubo);
+    //    CuboAwake.name = "PrimerCubo";
+    //    rend = CuboAwake.GetComponent<MeshRenderer>();
+    //    CuboAwake.transform.position = new Vector3(-20,5,-10);
 
+    //}
+
+    private void Start()
+    {
+        GameObject PrimerCubo = Instantiate<GameObject>(Cubo);
+        PrimerCubo.name = "PrimerCubo";
+        rend = PrimerCubo.GetComponent<MeshRenderer>();
+        PrimerCubo.transform.position = new Vector3(-20, 5, -10);
     }
 
     private void FixedUpdate()

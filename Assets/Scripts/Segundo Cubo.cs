@@ -7,8 +7,8 @@ public class SegundoCubo : MonoBehaviour
 
     public GameObject Cubo2;
     //public int numCubos = 0;
-    void Update()
-    {
+    //void Update()
+    //{
         //numCubos++;
         //GameObject CuboUpdate = Instantiate<GameObject>(Cubo2);
         //if (numCubos == 1)
@@ -20,14 +20,14 @@ public class SegundoCubo : MonoBehaviour
 
         //CuboUpdate.name = "CuboNumero" +numCubos;
         //CuboUpdate.transform.position = new Vector3(0, 3 + numCubos *2, -10);
-    }
+    //}
 
     private void Start()
     {
-        GameObject CuboUpdate = Instantiate<GameObject>(Cubo2);
-        CuboUpdate.name = "SegundoCubo";
-        rend = CuboUpdate.GetComponent<MeshRenderer>();
-        CuboUpdate.transform.position = new Vector3(-10, 5, -10);
+        GameObject SegundoCubo = Instantiate<GameObject>(Cubo2);
+        SegundoCubo.name = "SegundoCubo";
+        rend = SegundoCubo.GetComponent<MeshRenderer>();
+        SegundoCubo.transform.position = new Vector3(-10, 5, -10);
     }
 
     private void FixedUpdate()
